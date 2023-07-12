@@ -13,7 +13,7 @@ export const LanguageSelector = ({ onChange, type, value }: Props) => {
 
   return (
     <Form.Select aria-label='Selected language' onChange={handleChange} value={value}>
-      {type === 'from' && <option value={AUTO_LANGUAGE}>Detectar idioma</option>}
+      {type === 'from' && <option value={AUTO_LANGUAGE}>Detect Language</option>}
       {Object.entries(SUPPORTED_LANGUAGES).map(([key, language]) => (
         <option key={key} value={key}>
           {language}
