@@ -35,7 +35,10 @@ function App () {
         if (result == null) return
         setResult(result)
       })
-      .catch(() => setResult('Error'))
+      .catch((error) => {
+        console.error('Translate error: ', error)
+        setResult('Error')
+      })
   }, [debounceText, fromLanguage])
 
   const handleClipboard = () => {
@@ -50,7 +53,7 @@ function App () {
   }
 
   return (
-    <Container fluid>
+    <Container fluid style={{ padding: '0 50px', maxWidth: '1280px' }}>
       <h1>Byhako Translate</h1>
 
       <Row>

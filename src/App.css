@@ -1,7 +1,27 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: whitesmoke;
 }
 
+h1 {
+  text-align: center;
+  margin: 20px auto 50px;
+}
 
+select, textarea {
+  outline: none;
+}
+
+.form-select:focus {
+  outline: none !important;
+  border: solid 1px #dee2e6 !important;
+  box-shadow: none !important;
+}
+
+textarea:focus {
+  box-shadow: none !important;
+}
