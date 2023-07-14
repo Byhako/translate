@@ -29,6 +29,7 @@ export const TextArea = ({
     <Form.Control
       as='textarea'
       autoFocus={type === 'from'}
+      disabled={type === 'to'}
       placeholder={getPlaceholder(type, loading)}
       value={value}
       onChange={(e) => onChange(e.target.value)}
