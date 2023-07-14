@@ -1,0 +1,1 @@
+Translation application with react, typescript and the openai api.
